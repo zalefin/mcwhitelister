@@ -1,0 +1,19 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <h1>{{ server_name }} Whitelist Form</h1>
+        </div>
+        <div>
+            <form action="/submit" method="POST">
+                <label for="username">Minecraft user name (ingame, not Microsoft or Mojang account):</label><br>
+                <input type="text" id="username" name="username"><br>
+                <input type="hidden" id="token" name="token" value="{{ token }}">
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>
+
